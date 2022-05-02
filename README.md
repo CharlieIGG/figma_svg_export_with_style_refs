@@ -6,6 +6,7 @@
   - [Overview](#overview)
   - [Usage](#usage)
     - [Adding the plugin to Figma](#adding-the-plugin-to-figma)
+    - [Serving the Plugin](#serving-the-plugin)
     - [Using the plugin](#using-the-plugin)
   - [General Instructions for Figma Plugin Development](#general-instructions-for-figma-plugin-development)
 
@@ -27,6 +28,13 @@ Currently, in order to use this plugin, you will need to use it in "development 
   ```
   2. Go to `Figma > Plugins > Development > "Import plugin from manifest..."``
   3. Select the `manifest.json` file inside of this project on your machine
+
+### Serving the Plugin
+
+The following steps need to be run inside this project on your machine to serve the plugin in Development Mode.
+
+1. Make sure you install the dependencies: `npm install`
+2. Run the Webpack Dev Server: `npm run dev`
 
 ### Using the plugin
 As of today, the plugin will only emit the resulting SVG into Figma's console stream... be sure to have your console open (hit `cmd + p` in Figma and search for "console" to find the `open console` command).
