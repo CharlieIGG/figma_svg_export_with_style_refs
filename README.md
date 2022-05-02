@@ -1,3 +1,41 @@
+# Figma SVG Export with Style References
+
+⚠️⚠️⚠️ **Warning: this plugin is experimental, as well as a WORK-IN-PROGRESS**. Don't waste your time or risk your work by using this plugin... unless you know what you're doing.
+
+- [Figma SVG Export with Style References](#figma-svg-export-with-style-references)
+  - [Overview](#overview)
+  - [Usage](#usage)
+    - [Adding the plugin to Figma](#adding-the-plugin-to-figma)
+    - [Using the plugin](#using-the-plugin)
+  - [General Instructions for Figma Plugin Development](#general-instructions-for-figma-plugin-development)
+
+## Overview
+Figma is great, and SVG exports work like a charm, but what if you want to export SVG representations of your designs that still hold a reference to the Style variables you've defined, such as colors?
+
+As of May 2022, no plugins are found that allow you to somehow keep the reference to variable names, which is necessary if you want to be able to edit the styles of the SVGs on-the-fly outside of Figma (e.g. if you have a website builder and want Users to see how their style selections change the UI).
+
+This plugin is an attempt to fill in this gap from Figma.
+
+## Usage
+
+### Adding the plugin to Figma
+Currently, in order to use this plugin, you will need to use it in "development mode". For this you need to:
+
+  1. Clone this repo wherever it makes sense on your machine: 
+  ```shell
+  git clone git@github.com:CharlieIGG/figma_svg_export_with_style_refs.git
+  ```
+  2. Go to `Figma > Plugins > Development > "Import plugin from manifest..."``
+  3. Select the `manifest.json` file inside of this project on your machine
+
+### Using the plugin
+As of today, the plugin will only emit the resulting SVG into Figma's console stream... be sure to have your console open (hit `cmd + p` in Figma and search for "console" to find the `open console` command).
+
+Simply go to `Figma > Plugins > Development > Selection to SVG with Referred Styles`... observe and copy the output SVG from the console.
+
+**NOTE:** This plugin will currently export the whole page. Selection export coming soon...
+
+## General Instructions for Figma Plugin Development
 Below are the steps to get your plugin running. You can also find instructions at:
 
   https://www.figma.com/plugin-docs/setup/
