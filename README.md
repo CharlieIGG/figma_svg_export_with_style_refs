@@ -33,6 +33,8 @@ Currently, in order to use this plugin, you will need to use it in "development 
 
 The following steps need to be run inside this project on your machine to serve the plugin in Development Mode.
 
+As a pre-requisite for this, please make sure that you have the latest version of NodeJS and NPM on your machine.
+
 1. Make sure you install the dependencies: `npm install`
 2. Run the Webpack Dev Server: `npm run dev`
 
